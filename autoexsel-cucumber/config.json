@@ -1,0 +1,4 @@
+{
+	"step-definition": "autoexsel.cucumber",
+	"or-path": "object-repositories"
+}

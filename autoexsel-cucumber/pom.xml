@@ -33,15 +33,15 @@
 		<dependency>
 			<groupId>com.github.autoexsel</groupId>
 			<artifactId>autoexsel</artifactId>
-			<version>1.0.1</version>
+			<version>1.0.0</version>
 		</dependency>
-
+		
 		<dependency>
 			<groupId>info.cukes</groupId>
 			<artifactId>cucumber-java</artifactId>
 			<version>1.2.5</version>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>info.cukes</groupId>
 			<artifactId>cucumber-testng</artifactId>

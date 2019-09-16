@@ -1,4 +1,52 @@
 {
 	"step-definition": "autoexsel.cucumber",
-	"or-path": "object-repositories"
+	"or-path": "object-repositories",
+	
+	"report-type": "aventstack",
+	"or-separator": "==",
+	"api-testing": "true",
+	"appium-server": {
+		"ipAddress": "127.0.0.1",
+		"port": "4726"
+	},
+	"suite": {
+		"default": "FinalOffer"
+	},
+	"ios-app": {
+		"platformName": "iOS",
+		"platformVersion": "12.1",
+		"deviceName": "iPhone 8",
+		"fullReset": "false",
+		"noReset": "false",
+		"app": "/Users/ashdiksh/Downloads/Iceberg.app"
+	},
+	"env": {
+		"qa": {
+			"authorization": "AQIC5wM2LY4SfczgHBlnr7k6fUOpenAMjG4PKBXIQzMSwwiVaw.*AAJTSQACMDIAAlNLABMzMDc0MTYyOTMxMTkwNzU3MjY2AAJTMQACMDE.*",
+			"base-uri": "https://mule.icepick.guru/iceberg/v1/businesses/1003056660/lending",
+			"db": {
+				"url": "jdbc:postgresql://35.195.179.124:5432/lending",
+				"username": "lending",
+				"password": "UlaYg9e1BmT4n3OE5+B8rg=="
+			}
+		},
+		"dev": {
+			"authorization": "AQIC5wM2LY4SfczgHBlnr7k6fUOpenAMjG4PKBXIQzMSwwiVaw.*AAJTSQACMDIAAlNLABMzMDc0MTYyOTMxMTkwNzU3MjY2AAJTMQACMDE.*",
+			"base-uri": "https://mule.icepick.guru/iceberg/v1/businesses/1003056660/lending",
+			"db": {
+				"type": "postgreSQL",
+				"user": "fred",
+				"password": "secret",
+				"ssl": "true"
+			}
+		}
+	},
+	"product-categories": "/product-categories",
+	"question-configuration": "/applications/{applicationID}/question-configuration",
+	"answers": "/applications/{applicationID}/answers",
+	"consents": "/consents",
+	"sso-login": {
+		"username": "TESTUSER",
+		"password": "TESTPASSWORD"
+	}
 }

@@ -6,4 +6,17 @@
       <class name="cucumberRunner.WebTestRunner"/>
     </classes>
   </test> <!-- Default test -->
+  <test name="Default test(failed)">
+    <classes>
+      <class name="cucumberRunner.WebTestRunner">
+        <methods>
+          <include name="teardown"/>
+          <include name="setup"/>
+          <include name="setUpClass"/>
+          <include name="feature" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- cucumberRunner.WebTestRunner -->
+    </classes>
+  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

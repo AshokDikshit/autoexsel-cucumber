@@ -5,8 +5,8 @@ Feature: Verify search functionality on www.google.com
     Given that user opens the google homepage
     Then verify that google homepage is opened
 
-  Scenario: Perform text search on google homepage
+  Scenario Outline: Perform text search on google homepage
     Given that user is on google homepage
     Then user enters "Automation" in google search box
     Then user clicks on search button
-    Then verify that "Automation" is appearing in search result
+    Then verify that "Automation" is displayed in search result

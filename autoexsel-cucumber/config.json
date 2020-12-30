@@ -1,7 +1,8 @@
 {
 	"step-definition": "autoexsel.cucumber",
-	"or-path": "object-repositories",
-	
+	"or-path": "locators/web",
+	"waitInSeconds": "10",
+	"gherkinKeywords": "lib/gherkinKeywords.json",
 	"report-type": "aventstack",
 	"or-separator": "==",
 	"api-testing": "true",

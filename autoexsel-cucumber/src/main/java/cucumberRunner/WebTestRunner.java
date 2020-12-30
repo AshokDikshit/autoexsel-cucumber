@@ -1,6 +1,7 @@
 package cucumberRunner;
 
 import static com.autoexsel.webdriver.WebDriverManager.*;
+
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
@@ -11,7 +12,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 public class WebTestRunner extends AbstractTestNGCucumberTests {
 	@BeforeSuite
 	public void setup() throws Exception {
-//		printMissingLocators(LocatorType.Accessibility_ID);
+//		printMissingLocators(LocatorType.XPath);
 //		String dbPassword = db().getEncryptedPassword("TEST_PASSWORD");
 //		System.out.println("dbPassword: " + dbPassword);
 	}

@@ -1,6 +1,6 @@
 package cucumberRunner;
 
-import static com.autoexsel.mobile.driver.AppiumDriverManager.*;
+//import static com.autoexsel.mobile.driver.AppiumDriverManager.*;
 
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
@@ -20,6 +20,6 @@ public class MobileTestRunner extends AbstractTestNGCucumberTests {
 
 	@AfterSuite
 	public void teardown() {
-		closeApplication();
+//		closeApplication();
 	}
 }

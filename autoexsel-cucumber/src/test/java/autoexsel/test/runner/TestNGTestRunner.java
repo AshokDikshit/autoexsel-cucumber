@@ -25,7 +25,6 @@ public class TestNGTestRunner extends AbstractTestNGCucumberTests {
 
 	@BeforeSuite
 	public void setup() throws Exception {
-//		startTestExecution();
 //		printMissingLocators(LocatorType.XPath);
 //		String dbPassword = db().getEncryptedPassword("TEST_PASSWORD");
 //		System.out.println("dbPassword: " + dbPassword);

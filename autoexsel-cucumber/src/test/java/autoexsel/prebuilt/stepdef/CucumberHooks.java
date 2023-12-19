@@ -10,7 +10,6 @@ public class CucumberHooks {
 	
 	@Before
 	public void beforeTestScenarios(Scenario scenario) throws Exception {
-		System.out.println("Start Test Manager > beforeTestScenarios");
 		startTestReport(scenario);
 	}
 

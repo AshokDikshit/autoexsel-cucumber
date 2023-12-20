@@ -12,7 +12,7 @@ import io.cucumber.testng.CucumberOptions;
 				"autoexsel/prebuilt/stepdef", 
 				"com/custom/stepdef" 
 				}, 
-		tags = "@verifyStepDef", 
+		tags = "@SauceDemo", 
 		dryRun = false,
 		plugin = { 
 				"pretty",

@@ -9,99 +9,102 @@ import io.cucumber.java.en.Then;
 
 public class AssertionStepDef{
 
-	@Then("^I verify {string} is equals to (string) on {string} page$")
-	public void IVerifyOnPage(String element, String page) {
+	@Then("^I verify \"(.+)\" is equals to \"(.+)\" on \"(.+)\" page$")
+	public void IVerifyOnPage(String element, String value, String page) {
 		setStepName(StepDetails.stepName);
-		findElement(element, page).click();
+		findElement(element, page).verifyEqualsTo(value);
 	}
 	
-	@And("^I verify {string} is equals to (string)$")
+	@And("^I verify \"(.+)\" is equals to \"(.+)\"$")
 	public void IVerifyOn(String element) {
 		setStepName(StepDetails.stepName);
-		findElement(element).click();
+		findElement(element, "null").click();
 	}
 
-	@Then("^I verify testdata {string} is equals to (string) on {string} page$")
+	@Then("^I verify testdata \"(.+)\" is equals to \"(.+)\" on \"(.+)\" page$")
 	public void IVerifyTestDataOnPage(String element, String page) {
 		setStepName(StepDetails.stepName);
 		findElement(element, page).click();
 	}
 	
-	@And("^I verify testdata {string} is equals to (string)$")
+	@And("^I verify testdata \"(.+)\" is equals to \"(.+)\"$")
 	public void IVerifyTestDataOn(String element) {
 		setStepName(StepDetails.stepName);
-		findElement(element).click();
+		findElement(element, "null").click();
 	}
 	
-	@Then("^I verify runtime {string} is equals to (string) on {string} page$")
+	@Then("^I verify runtime \"(.+)\" is equals to \"(.+)\" on \"(.+)\" page$")
 	public void IVerifyRuntimeOnPage(String element, String page) {
 		setStepName(StepDetails.stepName);
 		findElement(element, page).click();
 	}
 	
-	@And("^I verify runtime {string} is equals to (string)$")
+	@And("^I verify runtime \"(.+)\" is equals to \"(.+)\"$")
 	public void IVerifyRuntimeOn(String element) {
 		setStepName(StepDetails.stepName);
-		findElement(element).click();
+		findElement(element, "null").click();
 	}
 
-	@Then("^I verify {string} is( not) visible on {string} page$")
+	@Then("^^I verify \"(.+)\" is (visible|not visible) on \"(.+)\" page$$")
 	public void IVerifyVisibleOnPage(String element, String usecase, String page) {
 		setStepName(StepDetails.stepName);
-		findElement(element, page).click();
+		System.out.println(element);
+		System.out.println(usecase);
+		System.out.println(page);
+//		findElement(element, page).click();
 	}
 	
-	@And("^I verify {string} is visible$")
+	@And("^I verify \"(.+)\" is visible$")
 	public void IVerifyVisibleOn(String element) {
 		setStepName(StepDetails.stepName);
-		findElement(element).click();
+		findElement(element, "null").click();
 	}
 
-	@Then("^I verify {string} is( not) enabled on {string} page$")
+	@Then("^I verify \"(.+)\" is( not) enabled on \"(.+)\" page$")
 	public void IVerifyEnabledOnPage(String element, String usecase, String page) {
 		setStepName(StepDetails.stepName);
 		findElement(element, page).click();
 	}
 	
-	@And("^I verify {string} is enabled$")
+	@And("^I verify \"(.+)\" is enabled$")
 	public void IVerifyEnabledOn(String element) {
 		setStepName(StepDetails.stepName);
-		findElement(element).click();
+		findElement(element, "null").click();
 	}
 
-	@Then("^I verify {string} is( not) selected on {string} page$")
+	@Then("^I verify \"(.+)\" is( not) selected on \"(.+)\" page$")
 	public void IVerifyselectedOnPage(String element, String usecase, String page) {
 		setStepName(StepDetails.stepName);
 		findElement(element, page).click();
 	}
 	
-	@And("^I verify {string} is selected$")
+	@And("^I verify \"(.+)\" is selected$")
 	public void IVerifyselectedOn(String element) {
 		setStepName(StepDetails.stepName);
-		findElement(element).click();
+		findElement(element, "null").click();
 	}
 
-	@Then("^I wait for {string} to be( not) visible on {string} page$")
+	@Then("^I wait for \"(.+)\" to be( not) visible on \"(.+)\" page$")
 	public void IVerifyWaitOnPage(String element, String usecase, String page) {
 		setStepName(StepDetails.stepName);
 		findElement(element, page).click();
 	}
 	
-	@And("^I wait for {string} to be( not) visible$")
+	@And("^I wait for \"(.+)\" to be( not) visible$")
 	public void IVerifyWaitOn(String element) {
 		setStepName(StepDetails.stepName);
-		findElement(element).click();
+		findElement(element, "null").click();
 	}
 
-	@Then("^I wait for {string} to be( not) enabled on {string} page$")
+	@Then("^I wait for \"(.+)\" to be( not) enabled on \"(.+)\" page$")
 	public void IVerifyWaitEnabledOnPage(String element, String usecase, String page) {
 		setStepName(StepDetails.stepName);
 		findElement(element, page).click();
 	}
 	
-	@And("^I wait for {string} to be( not) enabled$")
+	@And("^I wait for \"(.+)\" to be( not) enabled$")
 	public void IVerifyWaitEnabledOn(String element) {
 		setStepName(StepDetails.stepName);
-		findElement(element).click();
+		findElement(element, "null").click();
 	}
 }

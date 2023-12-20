@@ -1,0 +1,24 @@
+{
+	"step-definitions": "com.custom.stepdef",
+	"or-path": "locators/web",
+	"waitInSeconds": "10",
+	"report-type": "aventstack",
+	"or-separator": "==",
+	"api-testing": "true",
+	"test-env": "qa",
+	"qa-config": {
+		"appBaseURI": "",
+		"appURL": "",
+		"db": {
+			"url": ""
+		},
+		"proxy": {
+			"url": "",
+			"username": "",
+			"password": ""
+		},
+		"no-proxy": {
+			"urls": []
+		}
+	}
+}

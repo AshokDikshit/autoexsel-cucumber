@@ -9,14 +9,16 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 
 
-public class LaunchAndOpen{
+public class Inventory{
 	
-	public static String searchButton;
+	public static String menuButton;
+	public static String logout;
 
-	@Then("^verify that google homepage is opened$")
+	@Then("^I logout from SauceDemo app$")
 	public void verify_that_google_homepage_is_opened() {
 		setStepName(StepDetails.stepName);
-		findElement(searchButton).as("Button").isDisplayed();
+		findElement(menuButton).click();
+		findElement(logout).click();
 	}
-	
+
 }

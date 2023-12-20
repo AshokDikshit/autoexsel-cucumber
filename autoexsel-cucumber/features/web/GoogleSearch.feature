@@ -8,7 +8,3 @@ Feature: Verify search functionality of www.google.com
   Scenario: Perform text search on google homepage
     Given that user opens the google homepage
     When verify that google homepage is opened
-    #Given that user is on google homepage
-    #Then user enters "Automation" in google search box
-    #Then user clicks on search button
-    #Then verify that "Automation" is displayed in search result

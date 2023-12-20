@@ -1,9 +1,0 @@
-{
-	"step-definitions": "com.custom.stepdef",
-	"or-path": "locators/web",
-	"waitInSeconds": "10",
-	"report-type": "aventstack",
-	"or-separator": "==",
-	"api-testing": "true",
-	"test-config": "config"
-}

@@ -1,6 +1,6 @@
 package autoexsel.prebuilt.stepdef;
 
-import static com.autoexsel.web.driver.WebUITestManager.*;
+import static com.autoexsel.test.manager.WebTestManager.*;
 
 import autoexsel.plugins.wrapper.StepDetails;
 import io.cucumber.java.en.And;

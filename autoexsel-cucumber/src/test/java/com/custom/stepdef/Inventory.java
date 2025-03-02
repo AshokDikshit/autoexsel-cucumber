@@ -1,8 +1,8 @@
 package com.custom.stepdef;
 
-import static com.autoexsel.web.driver.WebUITestManager.findElement;
-import static com.autoexsel.web.driver.WebUITestManager.openURL;
-import static com.autoexsel.web.driver.WebUITestManager.setStepName;
+import static com.autoexsel.test.manager.WebTestManager.findElement;
+import static com.autoexsel.test.manager.WebTestManager.openURL;
+import static com.autoexsel.test.manager.WebTestManager.setStepName;
 
 import autoexsel.plugins.wrapper.StepDetails;
 import io.cucumber.java.en.Given;

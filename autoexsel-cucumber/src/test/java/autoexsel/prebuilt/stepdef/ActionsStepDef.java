@@ -1,6 +1,6 @@
 package autoexsel.prebuilt.stepdef;
 
-import static com.autoexsel.web.driver.WebUITestManager.*;
+import static com.autoexsel.test.manager.WebTestManager.*;
 
 import autoexsel.plugins.wrapper.StepDetails;
 import io.cucumber.java.en.And;
@@ -9,7 +9,7 @@ import io.cucumber.java.en.When;
 
 public class ActionsStepDef{
 
-	@Given("^I open web AUT$")
+	@Given("^I open application under test$")
 	public void that_user_opens_the_google_homepage() {
 		setStepName(StepDetails.stepName);
 		openURL("https://www.saucedemo.com/");

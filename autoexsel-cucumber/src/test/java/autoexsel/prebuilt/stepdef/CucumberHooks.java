@@ -1,10 +1,11 @@
 package autoexsel.prebuilt.stepdef;
 
-import static com.autoexsel.web.driver.WebUITestManager.*;
+import static com.autoexsel.test.manager.WebTestManager.*;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
+import io.cucumber.java.BeforeStep;
 
 public class CucumberHooks {
 	

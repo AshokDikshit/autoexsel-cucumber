@@ -2,7 +2,7 @@
 Feature: Verify login of https://www.saucedemo.com/
 
   Scenario: Login to SauceDemo and logout - v1
-    Given I open web AUT
+    Given I open application under test
     When I enter "standard_user" in "userName" on "SauceLogin" page
     And I enter "secret_sauce" in "password"
     And I click "loginButton"
@@ -11,7 +11,7 @@ Feature: Verify login of https://www.saucedemo.com/
     And I click "logout"
     
   Scenario: Login to SauceDemo and logout - v2
-    Given I open web AUT
+    Given I open application under test
     When I enter "standard_user" in "userName" on "SauceLogin" page
     And I enter "secret_sauce" in "password"
     And I click "loginButton"

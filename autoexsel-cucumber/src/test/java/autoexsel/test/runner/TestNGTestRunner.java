@@ -1,6 +1,6 @@
 package autoexsel.test.runner;
 
-import static com.autoexsel.web.driver.WebUITestManager.*;
+import static com.autoexsel.test.manager.WebTestManager.*;
 
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;

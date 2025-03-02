@@ -1,12 +1,14 @@
 {
-	"step-definition": "autoexsel.cucumber",
-	"or-path": "locators/web",
+	"stepDefPath": "com.custom.stepdef",
+	"locatorPath": "locators/web",
 	"waitInSeconds": "10",
 	"gherkinKeywords": "lib/gherkinKeywords.json",
-	"report-type": "aventstack",
-	"or-separator": "==",
-	"api-testing": "true",
-	"appium-server": {
+	"reportType": "aventstack",
+	"orSeparator": ":=",
+	"apiTest": "true",
+	"testEnv": "qa",
+	"testConfig": "config",
+	"appiumServer": {
 		"ipAddress": "127.0.0.1",
 		"port": "4726"
 	},
